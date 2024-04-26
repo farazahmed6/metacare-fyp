@@ -1,0 +1,139 @@
+.info-section {
+    padding: 0 32px;
+    text-align: center;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-title {
+    margin: 30px 50px 0;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -200deg,
+        #3a13a5 0%,
+        #45b9a4 29%,
+        #13a1ff 67%,
+        #0026ff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-title::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #413a3a;
+    border-radius: 8px;
+    left: 0;
+    bottom: -12px;
+    animation: lineColorChange 2s linear infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes lineColorChange {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.info-description {
+    margin: 64px;
+    text-align: center;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.8rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-cards-content {
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-cards {
+    height: auto;
+    border: 2px solid #d7d3d3;
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-card-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #DCE6FF;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+}
+
+.info-card-title {
+    margin: 32px 0 40px 0;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: .8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-card-description {
+    margin: 24px;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-cards:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.info-cards:hover .info-card-icon {
+    background-color: #2C96FF;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.info-fa-icon {
+    color: #2C96FF;
+    font-size: 30px;
+    transition: all 0.3s ease-in;
+    margin-top: -90px; /* Adjust the value accordingly */
+}
+
+.info-cards:hover .info-fa-icon {
+    color: white;
+}
