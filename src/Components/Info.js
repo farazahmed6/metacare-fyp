@@ -1,18 +1,20 @@
 import React from "react";
 import InformationCard from "./InformationCard";
-import { faHeartPulse, faClinicMedical , faHandHoldingMedical} from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeartPulse,
+  faClinicMedical,
+  faHandHoldingMedical,
+} from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
 
 function Info() {
   return (
     <div className="info-section" id="services">
       <div className="info-title-content">
-
-      <h3 className="info-title">
+        <h3 className="info-title">
           <span>What We Do</span>
         </h3>
 
-        
         <p className="info-description">
           We bring healthcare to your convenience, offering a comprehensive
           range of on-demand medical services tailored to your needs. Our
@@ -34,7 +36,7 @@ function Info() {
           icon={faClinicMedical}
         />
 
-<InformationCard
+        <InformationCard
           title="Emergency Care"
           description="The Donations service on our Healthcare Assistance Platform allows users to
            request financial assistance for medical expenses and other healthcare needs. Utilizing AI-driven 
@@ -43,7 +45,6 @@ function Info() {
            directly supporting those facing urgent healthcare challenges."
           icon={faHandHoldingMedical}
         />
-
 
         <InformationCard
           title="Donations"
@@ -54,8 +55,6 @@ function Info() {
           , fostering a healthier and more equitable future for all.."
           icon={faHeartPulse}
         />
-
-        
       </div>
     </div>
   );

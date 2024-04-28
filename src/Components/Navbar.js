@@ -45,6 +45,11 @@ function Navbar() {
           </Link>
         </li>
         <li>
+          <Link to="/donation" className="navbar-links">
+            Donation
+          </Link>
+        </li>
+        <li>
           <a href="#services" className="navbar-links">
             Services
           </a>

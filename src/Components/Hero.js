@@ -16,6 +16,9 @@ function Hero() {
   const handleBookAppointmentClick = () => {
     navigate("/appointment");
   };
+  const handleDonationsBtnClick = () => {
+    navigate("/donation");
+  };
 
   useEffect(() => {
     const countElement = document.getElementById("count"); //count animations for recive patients
@@ -64,6 +67,14 @@ function Hero() {
             onClick={handleBookAppointmentClick}
           >
             <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+          </button>
+          <button
+            className="text-appointment-btn"
+            style={{ marginRight: "15px" }}
+            type="button"
+            onClick={handleDonationsBtnClick}
+          >
+            <FontAwesomeIcon icon={faCalendarCheck} /> Get Donations
           </button>
 
           <div className="text-stats">
